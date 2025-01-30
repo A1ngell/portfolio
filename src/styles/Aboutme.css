@@ -1,0 +1,133 @@
+
+/* General */
+.Aboutme {
+    margin: 5rem 0;
+    padding: 2rem;
+}
+
+/* Estilos de filas y columnas */
+.row-me {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-column-me, .right-column-me {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#educacion{
+    font-size: 48px;
+    max-width: 50%;
+    color: black;
+    margin-bottom: 1rem;
+    max-width: 329px;
+    margin-left: 2rem;
+    margin-bottom: 0;
+    font-size: 48px;
+    display: inline-block;
+    overflow: hidden; /* Oculta el texto desbordante */
+    white-space: nowrap; /* Evita que el texto se envuelva */
+    border-right: 2px solid black; /* Cursor del efecto máquina de escribir */
+    animation: typing 3s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+
+#experiencia{
+    font-size: 48px;
+    max-width: 50%;
+    color: black;
+    margin-bottom: 1rem;
+    max-width: 355px;
+    margin-left: 2rem;
+    margin-bottom: 0;
+    font-size: 48px;
+    display: inline-block;
+    overflow: hidden; /* Oculta el texto desbordante */
+    white-space: nowrap; /* Evita que el texto se envuelva */
+    border-right: 2px solid black; /* Cursor del efecto máquina de escribir */
+    animation: typing 3s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+
+/* Línea de tiempo */
+.timeline-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+    border-left: 4px solid #4f46e5;
+}
+
+.timeline-entry {
+    position: relative;
+    padding: 1rem 0;
+}
+
+.timeline-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-meta {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-date {
+    width: 10rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #047857;
+    background-color: #d1fae5;
+    padding: 0.25rem 0.5rem;
+    border-radius: 9999px;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-subtitle {
+    font-size: 1.5rem;
+    color: #9ca3af;
+    margin-bottom: 0.25rem;
+}
+
+.timeline-description {
+    max-width: 70%;
+    font-size: 1.2rem;
+    color: #64748b;
+}
+
+@media (max-width: 768px) {
+    .skills, .row-me{
+        padding: 0 2rem;
+        flex-direction: column;
+    }
+
+    .left-column-skill, .right-column-skill{
+        width: 100%;
+    }
+
+    .left-column-skill h2{
+        font-size: 38px;
+    }
+
+    #experiencia, #educacion{
+        font-size: 38px;
+    }
+
+    .timeline-subtitle{
+        width: 10rem;
+    }
+
+    .timeline-entry {
+        width: 20rem;
+    }
+}
