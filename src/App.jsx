@@ -44,7 +44,7 @@ function App() {
       >
         <div className="arrow-container">
           <img
-            src="./down_arrow_icon2.svg"
+            src="/down_arrow_icon2.svg"
             alt="Arrow Down"
             className="arrow-down"
           />
