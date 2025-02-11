@@ -15,7 +15,7 @@ const carta = [
     sobre: "Web development",
     descripcion:
       "Mi primera web diseñada para emprendimiento de cosmetologia",
-    url: "https://Stilemay.com",
+    url: "https://Stilemay.co",
   },
 ];
 
